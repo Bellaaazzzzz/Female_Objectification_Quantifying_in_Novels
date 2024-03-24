@@ -7,4 +7,4 @@ The novel list used in our study comes from the 100 most popular downloaded book
 [Project Gutenberg]: https://www.gutenberg.org/ebooks/search/?sort_order=downloads
 
 ## Model
-<img src="figures/flowchart.png" width=300px>
+<img src="figures/flowchart.png" width=600px>
