@@ -6,6 +6,17 @@ The novel list used in our study comes from the 100 most popular downloaded book
 
 [Project Gutenberg]: https://www.gutenberg.org/ebooks/search/?sort_order=downloads
 
-## Model
-### flowchart
+## Measuring methods
+Our treatment of female objectification is by defining two bias metrics:
+1. **Agency Bias**: A text exhibits agency bias if male entities are more likely than female entities to appear in the text as grammatical agents.
+2. **Appearance Bias**: A text exhibits appearance bias if “female” words are distributionally closer to “appearance” words than “male” words.
+
+More explaination of this two concepts can be found in our paper.
+
+Following is the flowchart of our research:
+
 <img src="figures/flowchart.png" width=400px>
+
+*Code part*
+
+## Research and Analysis
