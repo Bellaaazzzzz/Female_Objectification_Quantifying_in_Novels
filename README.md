@@ -17,6 +17,30 @@ Following is the flowchart of our research:
 
 <img src="figures/flowchart.png" width=400px>
 
-*Code part*
+## Project Code
+### Project Structure
+The project consists of two components:
+- Analysis of word embedding space
+- Analysis of argument structure
 
+### The project requires the ability to:
+- Finetune word embeddings
+  - Done through Word2Vec 
+- Identify the characters in a novel and their gender
+  - Done through multi-step pipeline:
+    - Use NER to find “PERSON”s
+    - Label them as “male” or “female”, currently choosing between:
+      - Use AllenNLP coref model to find coreferents of each character. If “she”/”her”/etc. are more likely to be coreferents than “he”/”him”/etc., then it’s female
+      - Use GPT3.5 to generate the gender label
+- Determine whether they are agents/patients
+  - Done through AllenNLP's semantic role labeling model
+
+### Directory Structure
+```
+├── Male_Gaze_NLP <- Project Main Directory
+│   ├── notebooks <- All the ipython notebooks used for exploration and communication
+│   ├── src  <- All the scripts
+│   ├── README.md <- The top-level README for developers using this project
+```
 ## Research and Analysis
+TBD
